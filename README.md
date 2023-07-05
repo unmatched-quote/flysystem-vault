@@ -4,6 +4,19 @@ This is a utility library that allows reading Vault secrets using Laravel's `Sto
 
 Note: this is a **read only** driver, you can only **read secrets** from vault. Create/Update/Delete is **unsupported** and will remain such.
 
+## Why use this?
+
+Saving secrets is a problem that's rarely solved correctly. Hashicorp's Vault is the software for secret management, from
+usernames and passwords to saving private keys or having auto-rotating RDBMS credential management.2
+
+Instead of saving sensitive data to environment variables, filesystems or coming up with your own scheme for handling it, using Vault is better choice.2
+Vault, in turn, requires you to understand its API, caching, handling etc.
+
+This library makes it easy for Laravel devs to utilize vault while learning the basics at their own pace.
+
+The image below indicates how to think about paths in Vault and how to obtain data. You can insert the data into Vault using Vault's UI as this
+library exposes only reading capabilities.
+
 ## Installation
 
 1. `composer require just-some-code/flysystem-vault`
